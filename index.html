@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">Tarun Khadiya</a>
+    </div>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="https://www.linkedin.com/in/devbytarun" class="cta">Let's Talk</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <h1>I'm Tarun — Frontend Developer</h1>
+        <p>Passionate about turning ideas into real web experiences.
+          Currently exploring frontend development and looking for my first opportunity.</p>
+        <a href="../Tarun_Resume.pdf" class="hero-btn" download>Download Resume</a>
+      </div>
+      <div class="hero-right">
+        <!-- Image is wrapped by decorative background in CSS to feel more integrated -->
+        <img src="../hero1.png" alt="Hero Image">
+      </div>
+    </section>
+
+  </main>
+
+
+  <section class="tech">
+
+    <h2>Current Tech Stack</h2>
+
+    <div class="tech-grid">
+      <div class="tech-item">
+        <i class="devicon-html5-plain"></i>
+        <p>HTML 5</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-css3-plain"></i>
+        <p>CSS 3</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-javascript-plain"></i>
+        <p>JavaScript</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-git-plain"></i>
+        <p>Git</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-github-original"></i>
+        <p>GitHub</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-react-original"></i>
+        <p>React</p>
+      </div>
+
+      <div class="tech-item">
+            <i class="devicon-nodejs-plain-wordmark"></i>
+        <p>Node.js</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-nextjs-plain"></i>
+        <p>Next.js</p>
+      </div>
+
+    </div>
+  </section>
+
+
+<section class="projects" id="work">
+  <h2>Featured Project</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+
+   
+      <div class="project-image">
+        <img src="../bms.png" alt="BookMyShow Clone">
+      </div>
+
+      <div class="project-info">
+        <h3 class="project-title">BookMyShow Clone</h3>
+
+        <p class="project-description">
+          A responsive clone of BookMyShow built using HTML and CSS.
+          Focused on replicating real-world UI, layout accuracy, and clean structure.
+        </p>
+
+      
+        <div class="project-tech">
+          <span>HTML</span>
+          <span>CSS</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://bookmyshow-clone-devbytarun.netlify.app" class="project-btn live">Live Demo</a>
+          <a href="https://github.com/devbytarun/Ui-Labs/tree/e154167d004dccedb6f3a1d52bf8795a39df8ec1/bookmyshow%20-%20clone" class="project-btn github">GitHub</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Contact Us</h2>
+  <p>We’d love to hear from you. Please fill out the form below.</p>
+
+  <form action="https://formsubmit.co/devbytarun@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Portfolio Contact Form Message">
+    <input type="hidden" name="_captcha" value="false">
+    <div>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required />
+    </div>
+
+    <div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div>
+    <select id="subject" name="subject" required>
+  <option value="">-- Select Subject --</option>
+  <option value="general">General Inquiry</option>
+  <option value="project">Project Work</option>
+  <option value="job">Job Opportunity</option>
+  <option value="support">Support</option>
+</select>
+</div>
+
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <p class="footer-headline">Tarun Khadiya . Full Stack Developer . Built by DevByTarun</p>
+
+  <div class="footer-social-links">
+    <a href="https://www.linkedin.com/in/devbytarun" aria-label="LinkedIn profile">
+      <i class="devicon-linkedin-plain" aria-hidden="true"></i>
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/devbytarun" aria-label="GitHub profile">
+      <i class="devicon-github-original" aria-hidden="true"></i>
+      <span>GitHub</span>
+    </a>
+    <a href="https://x.com/devbytarun" aria-label="X profile">
+      <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M18.901 1.153h3.68l-8.04 9.188L24 22.847h-7.406l-5.8-7.584-6.634 7.584H.478l8.6-9.83L0 1.154h7.594l5.243 6.932zm-1.292 19.49h2.039L6.486 3.24H4.298z"></path>
+      </svg>
+      <span>x.com</span>
+    </a>
+  </div>
+
+  <p class="footer-note">Open to internships, freelance work, and full-time roles.</p>
+</footer>
+
+</body>
+
+</html>
