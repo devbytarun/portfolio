@@ -369,3 +369,154 @@ select {
   color: var(--color-muted);
   font-size: 0.95rem;
 }
+
+@media (max-width: 1100px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    column-gap: 28px;
+    row-gap: 34px;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 18px;
+  }
+
+  .logo a {
+    font-size: 1.55rem;
+  }
+
+  .nav-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .cta {
+    padding: 10px 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+    gap: 28px;
+    padding: 30px 18px 26px;
+  }
+
+  .hero-left h1 {
+    font-size: clamp(1.9rem, 8vw, 2.5rem);
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .hero-right {
+    width: min(78vw, 320px);
+    margin: 0 auto;
+  }
+
+  .hero-btn {
+    padding: 11px 24px;
+  }
+
+  .tech h2,
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    column-gap: 18px;
+    row-gap: 26px;
+    padding: 0 18px;
+  }
+
+  .tech-item i {
+    font-size: 3.2rem;
+  }
+
+  .projects {
+    padding: 44px 18px 24px;
+  }
+
+  .project-info {
+    padding: 16px;
+  }
+
+  #contact {
+    padding: 24px 18px;
+    line-height: 1.6;
+  }
+
+  .footer-headline {
+    font-size: 1.05rem;
+  }
+
+  .footer-social-links {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-right {
+    width: min(88vw, 280px);
+  }
+
+  .tech h2,
+  .projects h2 {
+    font-size: 1.7rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  #contact button {
+    width: 100%;
+  }
+
+  .footer-headline {
+    font-size: 0.95rem;
+  }
+
+  .footer-note {
+    font-size: 0.88rem;
+  }
+}
